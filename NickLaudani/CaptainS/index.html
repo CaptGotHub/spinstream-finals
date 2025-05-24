@@ -1,0 +1,157 @@
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SpinStream Courtney</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="finalized">
+  <div class="header">
+    <img src="assets/spinstream-logo.png" id="logo" alt="SpinStream Logo">
+    <div class="tagline">Records to Beam™</div>
+  </div>
+
+  <div class="toggle-controls">
+    <div id="themeToggleWrapper">
+      <label id="themeToggleLabel">Dark Mode</label>
+      <label class="switch">
+        <input type="checkbox" id="themeToggle">
+        <span class="slider"></span>
+      </label>
+    </div>
+    <div id="layoutToggleWrapper">
+      <label id="layoutToggleLabel">Landscape Mode (Desktop View)</label>
+      <label class="switch">
+        <input type="checkbox" id="layoutToggle">
+        <span class="slider"></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="container">
+     <!-- HERO SECTION -->
+<div class="hero-form-wrapper">
+  <section class="hero-editor hidden">
+    <h2>Edit Hero Section</h2>
+    <form id="heroForm">
+      <input type="text" id="heroName" placeholder="Artist Name" required="">
+      <input type="text" id="heroTagline" placeholder="Tagline / Genre" required="">
+      <input type="text" id="heroCTA" placeholder="Call to Action (e.g., Listen Now)" required="">
+      <input type="url" id="heroCTAUrl" placeholder="CTA URL (e.g., https://link.to/track)" required="">
+      <button type="submit">Preview</button>
+    </form>
+  </section>
+
+  <section class="hero-preview" id="heroPreview">
+    <div class="hero-content">
+      <h1 id="previewName">Nick Laudani / CaptainSpaceTime</h1>
+      <p id="previewTagline">RnB Soul</p>
+      <a href="https://www.captainspacetime.com/" class="btn-primary" id="previewCTA">Download and Stream</a>
+    </div>
+    </section></div>
+
+    <!-- VINYL SECTION -->
+    <div class="frame">
+      <div class="ring">
+        <video id="vinylVideo" src="assets/vinyl-spin.mp4" autoplay="" loop="" muted="" playsinline=""></video>
+      </div>
+      <div class="label">
+        <div class="text-bg"></div>
+        <div id="labelText">
+          <h2 id="songTitle">All I Got is You</h2>
+          <p id="artistName">Nick Laudani / CaptainSpaceTime </p>
+          <p id="year">jkl</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- BARCODE + QR -->
+    <div class="codes-container">
+      <img id="barcode" class="code" src="" alt="Barcode">
+      <img id="qrCode" class="code" src="" alt="QR Code">
+    </div>
+
+    <!-- FORM FIELDS -->
+    <form id="inputForm">
+      <div class="form-grid">
+        <input type="text" id="titleInput" placeholder="Song Title">
+        <input type="text" id="artistInput" placeholder="Artist Name">
+        <input type="text" id="yearInput" placeholder="Year">
+        <input type="text" id="releaseDateInput" placeholder="Release Date">
+        <input type="text" id="featuringArtistInput" placeholder="Featuring Artist">
+        <input type="text" id="barcodeInput" placeholder="Barcode">
+        <input type="text" id="qrInput" placeholder="QR Code URL">
+        <div class="form-group">
+          <label for="bgUpload">Upload Page Background:</label>
+          <input type="file" id="bgUpload" accept="image/*,video/mp4">
+        </div>
+        <div class="form-group">
+          <label for="labelUpload">Upload Center Label Background:</label>
+          <input type="file" id="labelUpload" accept="image/*,video/mp4">
+        </div>
+        <div class="form-group">
+          <label for="vinylUpload">Upload Vinyl Background:</label>
+          <input type="file" id="vinylUpload" accept="image/*,video/mp4">
+        </div>
+      </div>
+
+      <label for="actionButtonText">CTA Button Text:</label>
+      <input type="text" id="actionButtonText" placeholder="">
+
+      <label for="actionButtonUrl">CTA Button URL:</label>
+      <input type="url" id="actionButtonUrl" placeholder="">
+
+      <div class="nft-form-fields">
+        <label for="nftButtonText">NFT Button Text:</label>
+        <input type="text" id="nftButtonText" placeholder="">
+
+        <label for="nftButtonUrl">NFT Button URL:</label>
+        <input type="url" id="nftButtonUrl" placeholder="">
+
+        <label>
+          <input type="checkbox" id="nftButtonToggle">
+          Show NFT Button in Preview
+        </label>
+      </div>
+    </form>
+
+    <!-- MOVED OUTSIDE FORM -->
+    <div class="mode-controls">
+      <button type="button" id="toggleModeBtn" disabled="">Finalized</button>
+      <button type="button" id="finalizeBtn" disabled="">Finalize</button>
+    </div>
+
+    <!-- MP3 UPLOAD & PLAYER -->
+    <div id="mp3-upload-section">
+      <label for="mp3-upload">Upload MP3:</label>
+      <div id="mp3DropZone" class="drop-zone">Click or Drop MP3 Here</div>
+      <input type="file" id="mp3-upload" accept="audio/mp3" hidden="">
+    </div>
+
+    <div id="mp3-player-section">
+      <audio id="mp3-player" controls=""></audio>
+      <button type="button" id="muteToggle">Mute</button>
+    </div>
+
+    <!-- ACTION BUTTONS -->
+    <div id="actionButtonSection" style="display: block;">
+      <a href="https://10fa04-54.myshopify.com/" id="actionButtonLink" target="_blank">
+        <button class="action-btn" id="actionButton">Download and Stream Now</button>
+      </a>
+    </div>
+
+    <div id="nftButtonSection" style="display: none;">
+      <a href="#" id="nftButtonLink" target="_blank">
+        <button class="nft-btn" id="nftButton">Own This Track as NFT</button>
+      </a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+  <footer>
+    <p>© 2025 SpinStream™. All Rights Reserved.</p>
+    <p>SpinStream™ and "Records to Beam™" are trademarks.</p>
+  </footer>
+
+
+</body></html>
